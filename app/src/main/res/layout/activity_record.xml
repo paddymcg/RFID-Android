@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Record">
+
+    <TextView android:id="@+id/grouplabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Group Name" />
+
+    <EditText android:id="@+id/groupname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text=""
+        android:inputType="text"
+        android:layout_below="@+id/grouplabel"/>
+
+    <TextView android:id="@+id/otherLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Please enter what you would like to record"
+        android:layout_below="@+id/groupname"/>
+
+    <EditText android:id="@+id/othername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:text=""
+        android:layout_below="@+id/otherLabel"/>
+
+    <Button
+        android:id="@+id/add_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Group"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/othername"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        android:background="#ffffff"
+        app:menu="@menu/menunavigation"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
